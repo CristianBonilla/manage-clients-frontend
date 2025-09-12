@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'np-footer',
+  selector: 'mcf-footer',
   templateUrl: './footer.component.html',
   styles: []
 })

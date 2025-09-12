@@ -10,12 +10,12 @@ interface ControlElements {
 }
 
 @Directive({
-  selector: '[npFormErrorHandler]'
+  selector: '[mcfFormErrorHandler]'
 })
 export class FormErrorHandlerDirective implements OnInit {
   private control!: AbstractControl;
   private controlTouched = true;
-  @Input('npFormErrorHandler') controlOptions!: AbstractControl | {
+  @Input('mcfFormErrorHandler') controlOptions!: AbstractControl | {
     instance: AbstractControl;
     touched: boolean;
   };

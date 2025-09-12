@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ToggleSidebarService } from '@modules/home/services/toggle-sidebar/toggle-sidebar.service';
 
 @Component({
-  selector: 'np-navbar',
+  selector: 'mcf-navbar',
   templateUrl: './navbar.component.html',
   styles: []
 })

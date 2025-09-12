@@ -3,7 +3,7 @@ import { WINDOW } from '@core/providers/window.provider';
 import { ToggleSidebarService } from '@modules/home/services/toggle-sidebar/toggle-sidebar.service';
 
 @Component({
-  selector: 'np-sidebar',
+  selector: 'mcf-sidebar',
   templateUrl: './sidebar.component.html',
   styles: []
 })

@@ -3,7 +3,7 @@ import { WINDOW } from '@core/providers/window.provider';
 import { DEFAULT_SCROLLBAR_OPTIONS, ScrollbarOptions } from 'src/app/models/scrollbar';
 
 @Component({
-  selector: 'np-home',
+  selector: 'mcf-home',
   templateUrl: './home.component.html',
   styles: []
 })

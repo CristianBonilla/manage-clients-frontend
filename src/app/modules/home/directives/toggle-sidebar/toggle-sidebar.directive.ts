@@ -6,7 +6,7 @@ import { filter, take } from 'rxjs/operators';
 import { routeFromSidebar } from 'src/app/models/routes';
 
 @Directive({
-  selector: '[npToggleSidebar]'
+  selector: '[mcfToggleSidebar]'
 })
 export class ToggleSidebarDirective implements OnInit, AfterViewInit {
   private readonly document: Document;

@@ -6,7 +6,7 @@ import { DEFAULT_SCROLLBAR_OPTIONS } from 'src/app/models/scrollbar';
 const { HOME: { CLIENTS } } = APP_ROUTES;
 
 @Component({
-  selector: 'np-sidebar-wrapper',
+  selector: 'mcf-sidebar-wrapper',
   templateUrl: './sidebar-wrapper.component.html',
   styles: []
 })
