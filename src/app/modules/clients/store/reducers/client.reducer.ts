@@ -1,10 +1,11 @@
 import { ClientResponse } from '@modules/clients/models/client';
 import { getClientAction, getClientFailureAction, getClientSuccessAction } from '@modules/clients/store/actions/client.actions';
 import { Action, createReducer, on } from '@ngrx/store';
+import { ServiceError } from 'src/app/models/service-error';
 
 export interface ClientState {
   client: ClientResponse | null;
-  error: any;
+  error: ServiceError | null;
   loading: boolean;
 }
 
@@ -22,6 +23,7 @@ const clientReducer = createReducer(
   })),
   on(getClientFailureAction, (state, { error }) => ({
     ...state,
+    client: null,
     error,
     loading: false
   })),

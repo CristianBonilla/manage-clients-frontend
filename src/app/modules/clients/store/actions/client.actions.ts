@@ -1,5 +1,6 @@
 import { ClientResponse } from '@modules/clients/models/client';
 import { createAction, props } from '@ngrx/store';
+import { ServiceError } from 'src/app/models/service-error';
 
 export enum CLIENTS_ACTIONS {
   GET_CLIENT = '[Clients/Store] Get Client',
@@ -13,7 +14,7 @@ export const getClientAction = createAction(
 );
 export const getClientFailureAction = createAction(
   CLIENTS_ACTIONS.GET_CLIENT_FAILURE,
-  props<{ error: any }>()
+  props<{ error: ServiceError }>()
 );
 export const getClientSuccessAction = createAction(
   CLIENTS_ACTIONS.GET_CLIENT_SUCESS,

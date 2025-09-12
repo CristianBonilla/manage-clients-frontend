@@ -20,12 +20,12 @@ export class ClientEffects {
           catchError(httpError => {
             const error = httpError.error ?? httpError;
 
-          return timer(DEFAULT_WAIT)
-            .pipe(
-              mergeMap(_ => of(getClientFailureAction({
-                error: { ...error }
-              })))
-            );
+            return timer(DEFAULT_WAIT)
+              .pipe(
+                mergeMap(_ => of(getClientFailureAction({
+                  error: { ...error }
+                })))
+              );
           })
         ))
     ));
