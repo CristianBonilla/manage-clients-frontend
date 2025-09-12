@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { DirectivesModule } from '@directives/directives.module';
+import { ClientComponent } from '@modules/clients/client/client.component';
 import { ClientsRoutingModule } from '@modules/clients/clients-routing.module';
 import { ClientsComponent } from '@modules/clients/clients.component';
 import { SearchComponent } from '@modules/clients/search/search.component';
@@ -20,7 +21,8 @@ import { OverlayscrollbarsModule } from 'overlayscrollbars-ngx';
 @NgModule({
   declarations: [
     ClientsComponent,
-    SearchComponent
+    SearchComponent,
+    ClientComponent
   ],
   imports: [
     CommonModule,

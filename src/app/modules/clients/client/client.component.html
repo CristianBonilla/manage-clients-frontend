@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-sm-5 d-flex align-items-center py-2">
+    <h5 class="text-muted mb-0">Número de documento</h5>
+  </div>
+  <div class="col-sm-7 d-flex align-items-center py-2">
+    <p class="fw-bold text-black-50 mb-0" [ngStyle]="{ 'line-height': 1.2 }">{{ client.documentNumber }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-5 d-flex align-items-center py-2">
+    <h5 class="text-muted mb-0">Nombres</h5>
+  </div>
+  <div class="col-sm-7 d-flex align-items-center py-2">
+    <p class="text-black-50 mb-0" [ngStyle]="{ 'line-height': 1.2 }">{{ client.firstname }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-5 d-flex align-items-center py-2">
+    <h5 class="text-muted mb-0">Apellido</h5>
+  </div>
+  <div class="col-sm-7 d-flex align-items-center py-2">
+    <p class="text-black-50 mb-0" [ngStyle]="{ 'line-height': 1.2 }">{{ client.lastname }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-5 d-flex align-items-center py-2">
+    <h5 class="text-muted mb-0">Email</h5>
+  </div>
+  <div class="col-sm-7 d-flex align-items-center py-2">
+    <p class="text-black-50 fst-italic mb-0" [ngStyle]="{ 'line-height': 1.2 }">{{ client.email }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-5 d-flex align-items-center py-2">
+    <h5 class="text-muted mb-0">Fecha Creación</h5>
+  </div>
+  <div class="col-sm-7 d-flex align-items-center py-2">
+    <p class="text-black-50 fst-italic mb-0" [ngStyle]="{ 'line-height': 1.2 }">{{ client.createdAt | date: 'EEEE, MMMM d, y, h:mm:ss a' }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-5 d-flex align-items-center py-2">
+    <h5 class="text-muted mb-0">Fecha Actualización</h5>
+  </div>
+  <div class="col-sm-7 d-flex align-items-center py-2">
+    <p class="text-black-50 fst-italic mb-0" [ngStyle]="{ 'line-height': 1.2 }">{{ client.updatedAt | date: 'EEEE, MMMM d, y, h:mm:ss a' }}</p>
+  </div>
+</div>
