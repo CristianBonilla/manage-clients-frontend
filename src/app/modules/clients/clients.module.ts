@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { DirectivesModule } from '@directives/directives.module';
-import { ClientComponent } from '@modules/clients/client/client.component';
 import { ClientsRoutingModule } from '@modules/clients/clients-routing.module';
 import { ClientsComponent } from '@modules/clients/clients.component';
-import { SearchComponent } from '@modules/clients/search/search.component';
+import { ClientComponent } from '@modules/clients/components/client/client.component';
+import { SearchComponent } from '@modules/clients/components/search/search.component';
 import { ClientService } from '@modules/clients/services/client.service';
 import { reducer as clientReducer, clientsFeatureKey } from '@modules/clients/store';
 import { ClientEffects } from '@modules/clients/store/effects/client.effects';
